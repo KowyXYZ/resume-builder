@@ -28,15 +28,26 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        'grid': {
+        grid: {
           "0%": { transform: "translateY(-50%)" },
           "100%": { transform: "translateY(0)" },
+        },
+        pulse: {
+          "0%, 100%": { boxShadow: "0 0 0 0 var(--pulse-color)" },
+          "50%": { boxShadow: "0 0 0 8px var(--pulse-color)" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        'grid': "grid 15s linear infinite",
+        grid: "grid 15s linear infinite",
+        pulse: "pulse var(--duration) ease-out infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
       },
     },
   },
