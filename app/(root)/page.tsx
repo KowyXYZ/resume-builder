@@ -2,6 +2,7 @@ import BelowHero from "@/components/BelowHero";
 import Header from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HomeInfo } from "@/components/HomeInfo";
+import {Features} from '@/components/Features'
 
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
@@ -29,6 +30,7 @@ export default function Home() {
       <Hero/>
       <BelowHero/>
       <HomeInfo/>
+      <Features/>
     </main>
   );
 }
