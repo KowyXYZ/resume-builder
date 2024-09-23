@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check } from "lucide-react"
 
 
-export function Prices() {
+export function Reviews() {
 
   const plans = [
     {
@@ -29,7 +29,7 @@ export function Prices() {
   ]
   
     return (
-      <div className='h-full w-full overflow-hidden mt-44'>
+      <div className='h-full w-full overflow-hidden '>
         <div className=''> {/* Create enough space for scrolling */}
           <InView
             variants={{
@@ -60,7 +60,7 @@ export function Prices() {
             <div className="container mx-auto py-10">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {plans.map((plan) => (
-                  <Card key={plan.name} className={`${plan.name === 'Unlimited' ? 'border-2 border-violet-600' : ''} flex flex-col bg-transparent text-[#fff]`}>
+                  <Card key={plan.name} className={`${plan.name === 'Unlimited' ? 'border-2 border-[#6300ed]' : ''} flex flex-col bg-transparent text-[#fff]`}>
                     <CardHeader>
                       <CardTitle className="text-2xl">{plan.name}</CardTitle>
                       <CardDescription>{plan.description}</CardDescription>
