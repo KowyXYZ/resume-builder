@@ -77,7 +77,7 @@ export function Prices() {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className={`${plan.name === 'Unlimited' ? 'bg-gradient-to-r from-violet-600 to-indigo-600 text-[#fff]' : 'bg-[#fff] text-[#212121]'} w-full   `}>{plan.name === "Enterprise" ? "Contact Sales" : "Get Started"}</Button>
+                      <Button className={`${plan.name === 'Unlimited' ? 'bg-gradient-to-r from-violet-600 to-indigo-800 text-[#fff]' : 'bg-[#fff] text-[#212121]'} w-full   `}>{plan.name === "Enterprise" ? "Contact Sales" : "Get Started"}</Button>
                     </CardFooter>
                   </Card>
                 ))}
