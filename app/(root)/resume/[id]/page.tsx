@@ -12,6 +12,7 @@ const Home: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    email: '',
     about: '',
     skills: '',
     experience: '',

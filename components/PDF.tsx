@@ -18,6 +18,7 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => (
       <View style={styles.section}>
         <Text style={{ fontSize: 24, fontWeight: 'bold' }}>{data.name}</Text>
         <Text>{data.phone}</Text>
+        <Text>{data.email}</Text>
         <Text>{data.about}</Text>
         <Text>Skills: {data.skills}</Text>
         <Text>Experience: {data.experience}</Text>
